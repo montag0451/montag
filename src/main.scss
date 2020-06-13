@@ -1,3 +1,48 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.header {
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  background-color: red;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main {
+  margin-top: 100px;
+  height: 200vh;
+  background-color: #928588;
+}
+
+.feedback {
+  position: sticky;
+  left: 100%;
+  top: 50%;
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+}
+.relative {
+  width: 100px;
+  height: 100px;
+  background-color: #b47b88;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  color: red;
+}
+
+.absolute {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 10px;
+  background-color: #faed34;
+}
