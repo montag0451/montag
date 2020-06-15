@@ -16,9 +16,8 @@ body * {
 
 .main {
   margin-top: 100px;
-  height: 200vh;
-  background-color: #928588;
-}
+  height: 100vh;
+ }
 
 .feedback {
   position: sticky;
@@ -45,4 +44,26 @@ body * {
   top: 10px;
   left: 10px;
   background-color: #faed34;
+}
+
+.phone-icon {
+  position: relative;
+  width: 100px;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.count {
+  position: absolute;
+  display: flex;
+  border-radius: 50%;
+  background-color: rgb(226, 24, 24);
+  top: 10px;
+  left: 10px;
+  align-items: center;
+  
+
 }
