@@ -17,9 +17,8 @@ align-items: center;;
 
 .header-left {
   height: 100%;
-  width: 25%; 
+  width: 300px; 
   display: flex;
-  justify-content: space-between;
 }
 
 .icon-rabbit {
@@ -34,7 +33,9 @@ align-items: center;;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
 }
+
 .first-line {
   color: rgb(255, 199, 89);
   font-size: 20px;
@@ -48,10 +49,31 @@ align-items: center;;
 
 .header-right {
   height: 100%;
-  width: 50%;
+  width: 600px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+}
+
+.right-header-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  margin: 0 30px;
+  width: 20%;
+}
+
+.right-header-icon {
+  height: 50px;
+  width: 50px;
+  padding-bottom: 20px;
+}
+
+.right-header-names {
+  color: rgb(110, 109, 107);
+  font-size: 13px;
+  font-weight: bold;
 }
 
 
