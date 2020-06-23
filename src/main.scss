@@ -22,7 +22,7 @@ align-items: center;;
 }
 
 .icon-rabbit {
-  height: 100%;
+  height: 90%;
 }
 
 .site-name {
@@ -117,6 +117,9 @@ align-items: center;;
    display: flex;
    flex-direction: row;
  }
+ a:link {
+   text-decoration: none;
+ }
 
  .column {
    width: 25%;
@@ -125,13 +128,15 @@ align-items: center;;
 
  .read-more {
    text-align: right;
- }
+   font-style: italic;
+   }
 
- .title-team {
+ .title {
    color: rgb(255, 156, 0);
    font-size: 30px;
    text-decoration: underline;
    margin-top: 50px;
+   margin-bottom: 40px;
  }
 
  .three-columns {
@@ -149,6 +154,11 @@ align-items: center;;
 
  .post {
    text-align: center;
+   color: rgb(110, 109, 107);
+ }
+
+ span {
+   color: rgb(253, 205, 130);
  }
 
  .post-img {
@@ -161,6 +171,30 @@ align-items: center;;
  
  .post-represent {
    padding: 0 60px;
+ }
+ 
+ textarea {
+   width: 90%;
+   resize: none;
+ }
+
+ .form {
+  color: rgb(252, 181, 68);
+  width: 100%;
+ }
+
+ .form-text {
+   width: 90%;
+   background-color: rgb(248, 247, 246);
+   border: 0;
+   }
+
+ .button {
+   position: relative;
+   left: 80%;
+   background-color: rgb(251, 156, 6);
+   color: #ffffff;
+   border: 0;
  }
 
  .footer {
