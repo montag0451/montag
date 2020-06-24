@@ -1,3 +1,44 @@
 body * {
   outline: 1px solid lightgrey;
 }
+.bg-image {
+  height: 100px;
+  width: 200px;
+  background-image: url('./img/goo.jpg');
+ 
+  background-repeat: no-repeat;
+  background-position: -100px -20px;
+}
+
+.sprite {
+  background-image: url('../../img/css-sprites.png');
+  width: 150px; height: 150px;
+}
+.bg-bob1 {
+  background-position: -10px -10px;
+}
+
+.bg-bob2 {
+  background-position: -180px -10px;
+}
+
+.bg-bob3 {
+  background-position: -10px -180px;
+}
+
+.bg-bob4 {
+  background-position: -180px -180px;
+}
+
+.font {
+  font-size: 32px;
+  font-family: courier, sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 50px;
+  line-height: 100px;
+  color: #dc3245;
+}
