@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Backstranger';
+  src: url('../fonts/BackstrangerThin.ttf');
+}
+@font-face {
+  font-family: 'Backstranger';
+  src: url('../fonts/BackstrangerThinItalic.ttf');
+  font-style: italic;
+}
+
+  
 body * {
   outline: 1px solid lightgrey;
 }
@@ -41,4 +52,9 @@ body * {
   word-spacing: 50px;
   line-height: 100px;
   color: #dc3245;
+}
+.font div {
+  font-family: Backstranger, sans-serif;
+  font-style: italic;
+  font-style: bold;
 }
