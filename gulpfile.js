@@ -13,7 +13,6 @@ const sass = require('gulp-sass');
 const browsersync = require('browser-sync');
 const fs = require("fs");
 const replace = require('gulp-replace');
-const cleanCSS = require('gulp-clean-css');
 
 const path = {
   dist: {
@@ -71,9 +70,10 @@ const httpBuild = () => src(path.src.html)
 
 const stylesBuild = () => src(path.src.style)
   .pipe(sourcemaps.init())
+  .pipe(plumber())
   .pipe(sass())
-  .pipe(replace(/(url\(")[.|..\/]+(img\/\D+.\D+"\))/, '$1../../$2'))
-  .pipe(cleanCSS({compatibility: 'ie11'}))
+  .pipe(replace(/(url\(")[.|..\/]+(img\/.+\..+"\))/g, '$1../../$2'))
+  .pipe(plumber.stop())
   .pipe(sourcemaps.write('./maps/'))
   .pipe(dest(path.dist.css))
   .pipe(browsersync.stream());
@@ -91,13 +91,13 @@ const server = () => {
   watch(path.src.img, imgsBuild);
   watch(path.src.fonts, fontsBuild);
   watch(path.src.js, jsBuild);
+  
 };
 
 const build = series(
   cleanDist,
-  parallel(httpBuild, stylesBuild, fontsBuild, imgsBuild, jsBuild)
-  );
+  parallel(httpBuild, stylesBuild, fontsBuild, imgsBuild, jsBuild));
 exports.start = series(build, server);
-exports.clean = cleanDist;
-exports.build = build;
+exports.clean = series(cleanDist);
+exports.build = series(build);
 
