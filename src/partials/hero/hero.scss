@@ -1,0 +1,67 @@
+@import "../../variables.scss";
+.hero {
+    display: flex; 
+    justify-content: space-between;
+    padding: 0 80px;
+
+    &__content {
+        padding-top: 110px;
+        padding-bottom: 185px;
+        color: $color-white;
+        max-width: 580px;
+    }
+
+    &__title {
+        font-size: 55px;
+        line-height: 65px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        padding-top: 28px;
+        font-size: 18px;
+        line-height: 35px;
+        font-weight: 400;
+    }
+
+    &__buttons ul {
+        display: flex;
+
+        li:first-child {
+            margin-right: 30px;
+            background-color: $color-title;
+            a {
+                color: $color-white;
+                font-family: Roboto;
+                font-weight: 400;
+            }
+        }
+
+        li:last-child {
+            background-color: $color-white;
+            a {
+                color: $color-title;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 40px;
+        cursor: pointer;
+        padding: 20px 40px;
+        border-radius: 5px;
+        font-size: 15px;
+        text-transform: uppercase;
+        filter: drop-shadow(0px 5px 2.5px rgba(0,0,0,0.15));        
+    }
+
+    &__video {
+        filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.2));
+        video {
+            border: 1px solid #061e37;
+            border-radius: 5px;
+        }
+    }
+}
