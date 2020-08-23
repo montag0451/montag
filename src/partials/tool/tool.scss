@@ -1,0 +1,92 @@
+.tool {
+    padding: 100px 80px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 555px;
+        text-align: center;
+        padding-bottom: 90px;
+    }
+
+    &__header-first {
+        font-size: 45px;
+        color: $color-title;
+        font-weight: 600;
+    }
+
+    &__header-second {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        color: $color-description;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    &__header-description {
+        font-size: 15px;
+        line-height: 25px;
+        color: $color-description;
+        font-weight: 400;
+    }
+
+    &__titles {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        width: 25%;
+    }
+
+    .title-heading {
+        font-size: 20px;
+        line-height: 25px;
+        color: $color-title;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-top: 45px;
+        padding-bottom: 20px;
+        }
+    
+    .title-description {
+        font-size: 15px;
+        line-height: 20px;
+        color: $color-description;
+        font-weight: 400;
+    }
+
+    &__btn {
+        margin-top: 80px;
+        width: 150px;
+        height: 55px;
+        background-color: #1de9b6;
+        border-radius: 5px;
+        filter: drop-shadow(0px 5px 2.5px rgba(0,0,0,0.15));
+        font-size: 15px;
+        font-weight: 700;
+        color: $color-white;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 55px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-title;
+        }
+    }
+
+    .tt-img {
+        height: 77px;
+        width: 65px;
+    }
+}
