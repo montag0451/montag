@@ -1,0 +1,33 @@
+.services {
+    padding: 100px 80px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    .services__header-title {
+        font-size: 45px;
+        color: $color-title;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    .services__header-description {
+        font-size: 15px;
+        line-height: 25px;
+        color: $color-description;
+        font-weight: 400;
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 50px;
+
+    }
+}
