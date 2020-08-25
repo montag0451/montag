@@ -33,11 +33,29 @@
 
     &__accordion {
         width: 800px;
-        padding: 25px;
+        padding: 25px 25px 0 25px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     }
 
     .accordion-content {
         overflow: hidden;
+        display: flex;
+    }
+
+    .acc-text {
+        font-size: 15px;
+        letter-spacing: 0px;
+        line-height: 25px;
+        color: &color-title;
+        font-weight: 400;
+        padding-left: 25px;
+    }
+
+    .acc-pic {
+        border-radius: 10px;
+        margin-bottom: 25px;
     }
 
     .accordion-opener {
@@ -47,6 +65,7 @@
         align-items: center;
         cursor: pointer;
         color: $color-title;
+        margin-bottom: 25px;
     }
      
     .accordion-opener:after {
@@ -54,8 +73,8 @@
         font-family: 'Material Icons';
         font-size: 25px;
         line-height: 25px;
-        letter-spacing: 25px;
         text-align: center;
+        transition: transform .5s ease;
     }
 
     .material-icons {
@@ -74,6 +93,7 @@
         font-weight: 700;
         text-align: center;
         padding-left: 25px;
+        text-transform: uppercase;
     }
 
     .accordion-status {
@@ -81,11 +101,13 @@
     }
 
     .accordion-status ~ .accordion-content {
-        height: 0;
+        max-height: 0;
+        transition: max-height .5s ease;
     }
 
     .accordion-status:checked ~ .accordion-content {
-        height: 100%;
+        max-height: 180px;
+        transition: max-height .5s ease;
     }
 
     .accordion-status:checked ~ .accordion-opener:after {
