@@ -30,4 +30,65 @@
         padding-bottom: 50px;
 
     }
+
+    &__accordion {
+        width: 800px;
+        padding: 25px;
+    }
+
+    .accordion-content {
+        overflow: hidden;
+    }
+
+    .accordion-opener {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        color: $color-title;
+    }
+     
+    .accordion-opener:after {
+        content: '\e5c5';
+        font-family: 'Material Icons';
+        font-size: 25px;
+        line-height: 25px;
+        letter-spacing: 25px;
+        text-align: center;
+    }
+
+    .material-icons {
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .acc-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .accordion-title {
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        padding-left: 25px;
+    }
+
+    .accordion-status {
+        display: none;
+    }
+
+    .accordion-status ~ .accordion-content {
+        height: 0;
+    }
+
+    .accordion-status:checked ~ .accordion-content {
+        height: 100%;
+    }
+
+    .accordion-status:checked ~ .accordion-opener:after {
+        transform: rotate(180deg);
+    }
 }
