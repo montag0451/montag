@@ -1,0 +1,104 @@
+.review {
+    background-image: url("./img/gradient.png"),  url("/img/bg2.png");
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+
+    &__content {
+        width: 40%;
+        color: $color-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__customers {
+        width: 50%;
+    }
+}
+
+.review-title {
+    font-size: 45px;
+    font-weight: 600;
+    padding: 30px 0;
+}
+
+.review-description {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.review-button {
+    width: 150px;
+    height: 55px;
+    background-color: $color-title;
+    border-radius: 5px;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.15));
+    font-size: 15px;
+    font-weight: 700;
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 55px;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+.slick-prev, 
+.slick-next {
+    -webkit-transform: translate(-50%, 0) rotate(90deg);
+    -ms-transform: translate(-50%, 0) rotate(90deg);
+    transform: translate(-50%, 0) rotate(90deg);
+    left: 50%;
+}
+    
+.slick-prev {
+    top: -10px;
+}
+
+.slick-next {
+    top: auto;
+    bottom: -20px;
+}
+
+.slick-vertical .slick-arrow {
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+    
+.slick-vertical .slick-arrow:hover { 
+    opacity: .6; 
+}
+
+.block-review {
+    width: 650px;
+    height: 160px;
+    border-radius: 5px;
+    background-color: $color-white;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+}
+
+.user-name {
+    font-size: 18px;
+    line-height: 25px;
+    color: &color-title;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.user-review {
+    font-size: 15px;
+    line-height: 25px;
+    color: $color-description;
+    font-weight: 400;
+}
+
+.avatar {
+    align-items: center;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}

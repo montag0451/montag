@@ -32,7 +32,7 @@
     }
 
     &__accordion {
-        width: 800px;
+        max-width: 800px;
         padding: 25px 25px 0 25px;
         margin-bottom: 25px;
         border-radius: 5px;
@@ -51,6 +51,7 @@
         color: &color-title;
         font-weight: 400;
         padding-left: 25px;
+        margin-bottom: 25px;
     }
 
     .acc-pic {
