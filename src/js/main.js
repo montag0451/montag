@@ -7,4 +7,13 @@ $(document).ready(function(){
         nextArrow: '<img src="/img/down.svg">'
     });
   });
-          
+
+  $('.slider').slick({
+    slidesToShow: 1,
+    centerMode: true,
+    centerPadding: "15%",
+    speed: 500,
+    focusOnSelect: true,
+    prevArrow: 0,
+    nextArrow: 0,
+  });
