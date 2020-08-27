@@ -1,0 +1,79 @@
+.footer-bg {
+    background-color: $color-title;
+    padding: 50px 80px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+    &__items ul {
+        display: flex;
+    }
+
+    &__item {
+        padding: 0px 25px;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 600;
+
+        a {
+            color: $color-white;
+        }
+    }
+}
+
+.footer__logo {
+    display: flex;
+    text-decoration: none;
+
+    &__img {
+        margin-right: 10px;
+    }
+
+    &__text {
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p:first-child {
+            font-weight: 400;
+        }
+
+        p:last-child {
+            font-weight: 700;
+            padding-top: 5px;
+        }
+    }
+}
+
+.footer-2nd-line {
+    color: $color-white;
+}
+.about a {
+    color: $color-white;
+}
+
+.about-text {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.about-text:after {
+    content: url(../../img/ellipse.png);
+    margin: 10px;
+    }
+
+.about-text:last-child:after {
+    content: '';
+}
+
+
