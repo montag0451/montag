@@ -1,13 +1,16 @@
 .hero {
     display: flex; 
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 0 80px;
 
     &__content {
-        padding-top: 100px;
-        padding-bottom: 125px;
+        padding-top: 80px;
+        // padding-bottom: 125px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         color: $color-white;
         max-width: 580px;
         min-width: 400px;
@@ -63,10 +66,12 @@
         display: flex;
         align-items: center;
         position: relative;
+        width: 50%;
         video {
             cursor: pointer;
             height: 320px;
-            width: 600px;
+            width: 100%;
+            min-width: 50px;
             background-image:url(../../img/video2.png), url(../../img/video.png);
             filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.2));
             background-size: cover;
